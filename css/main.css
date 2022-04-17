@@ -451,16 +451,16 @@ img {
   transition: color 250ms var(--cubic);
 }
 
-.nav-link,
-.logo {
-  color: var(--titel-text-color);
-  text-decoration: none;
-}
-
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
+}
+
+.nav-link,
+.logo {
+  color: var(--titel-text-color);
+  text-decoration: none;
 }
 
 .nav-contacts {
@@ -479,10 +479,6 @@ img {
   color: #2196f3;
 }
 
-/* .nav-contacts:hover .nav-icon,
-.nav-contacts:focus .nav-icon {
-  fill: var(--accent-color);
-} */
 .hero {
   max-width: 1600px;
   text-align: center;
@@ -859,6 +855,17 @@ textarea:focus {
   border-color: var(--accent-color);
 }
 
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* третий блок футера */
 .addres {
   margin-right: 70px;
 }

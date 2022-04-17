@@ -17,7 +17,7 @@
     margin-right: 30px;
 }
 
-.disc-item:last-child {
+&:last-child {
     margin-right: 0;
 }
 
@@ -30,7 +30,7 @@
     z-index: -1;
 }
 
-.disc-wrap::before {
+&::before {
     content: "";
     position: absolute;
     display: inline-block;
