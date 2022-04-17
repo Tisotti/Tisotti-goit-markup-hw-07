@@ -7,62 +7,6 @@
     transition: fill 250ms var(--cubic);
 }
 
-.nav-contacts:hover .nav-icon,
-.nav-contacts:focus .nav-icon {
-    fill: var(--accent-color);
-}
-
-// модалка кнопка закрить крестик
-.modal__icon__btn-close {
-    width: 11px;
-    height: 11px;
-
-    fill: #000000;
-
-    transition: fill 250ms var(--cubic);
-}
-
-// модалка в инпуте: чеовек, кониерт, телефон
-
-.modal__icon {
-    position: absolute;
-    top: 58%;
-    left: 15px;
-
-    display: inline-block;
-
-    width: 18px;
-    height: 18px;
-
-    fill: var(--titel-text-color);
-    transition: fill 250ms var(--cubic), fill 250ms var(--cubic);
-
-    &:hover {
-    fill: var(--accent-color);
-    }
-}
-
-.modal__input:hover+.modal__icon,
-.modal__input:focus+.modal__icon {
-    fill: var(--accent-color);
-}
-
-// модалка галочка в чекбоксе
-
-.modal__checkbox-icon {
-    margin-right: 7px;
-
-    width: 16px;
-    height: 15px;
-}
-
-.modal__checkbox-input:focus+.modal__checkbox-icon {
-    background-image: url(..../images/icon\check.svg);
-    background-size: contain;
-    background-origin: border-box;
-    fill: var(--accent-color);
-}
-
 // особенности
 .pecu-icon {
     width: 270px;
@@ -122,11 +66,6 @@
 }
 
 // постоянний клиенти иконки
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
-    fill: var(--accent-color);
-}
-
 .clients-icon {
     width: 106px;
     height: 60px;

@@ -55,7 +55,13 @@
 
     color: currentColor;
     cursor: pointer;
+
+    &:hover .clients-icon,
+    &:focus .clients-icon {
+        fill: var(--accent-color);
+    }
 }
+
 
 
 

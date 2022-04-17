@@ -75,5 +75,11 @@
     &:focus {
         color: #2196f3;
     }
+
+    &:hover .nav-icon,
+    &:focus .nav-icon {
+        fill: var(--accent-color);
+    }
 }
+
 

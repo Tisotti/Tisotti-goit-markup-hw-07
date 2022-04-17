@@ -21,8 +21,6 @@
     }
 }
 
-
-
 .disc-picture {
     display: inline-block;
 }
@@ -47,8 +45,7 @@
 }
 
 
-
-.disc-text + .disc-item {
+.disc-text {
     position: absolute;
     top: 90%;
     left: 20%;

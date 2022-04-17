@@ -221,51 +221,6 @@ img {
   transition: fill 250ms var(--cubic);
 }
 
-.nav-contacts:hover .nav-icon,
-.nav-contacts:focus .nav-icon {
-  fill: var(--accent-color);
-}
-
-.modal__icon__btn-close {
-  width: 11px;
-  height: 11px;
-  fill: #000000;
-  transition: fill 250ms var(--cubic);
-}
-
-.modal__icon {
-  position: absolute;
-  top: 58%;
-  left: 15px;
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  fill: var(--titel-text-color);
-  transition: fill 250ms var(--cubic), fill 250ms var(--cubic);
-}
-
-.modal__icon:hover {
-  fill: var(--accent-color);
-}
-
-.modal__input:hover + .modal__icon,
-.modal__input:focus + .modal__icon {
-  fill: var(--accent-color);
-}
-
-.modal__checkbox-icon {
-  margin-right: 7px;
-  width: 16px;
-  height: 15px;
-}
-
-.modal__checkbox-input:focus + .modal__checkbox-icon {
-  background-image: url(..../images/icon\check.svg);
-  background-size: contain;
-  background-origin: border-box;
-  fill: var(--accent-color);
-}
-
 .pecu-icon {
   width: 270px;
   height: 120px;
@@ -314,11 +269,6 @@ img {
 
 .svg-icon {
   transition: fill 250ms var(--cubic);
-}
-
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
-  fill: var(--accent-color);
 }
 
 .clients-icon {
@@ -470,6 +420,11 @@ img {
   color: #2196f3;
 }
 
+.nav-contacts:hover .nav-icon,
+.nav-contacts:focus .nav-icon {
+  fill: var(--accent-color);
+}
+
 .hero {
   max-width: 1600px;
   text-align: center;
@@ -541,6 +496,13 @@ img {
   color: #212121;
 }
 
+.modal__icon__btn-close {
+  width: 11px;
+  height: 11px;
+  fill: #000000;
+  transition: fill 250ms var(--cubic);
+}
+
 .modal__form {
   margin-left: auto;
   margin-right: auto;
@@ -584,12 +546,12 @@ img {
 }
 
 .modal__input:focus,
-.modal__input textarea:focus {
+.modal__input .modal__comment:focus {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
 
-.modal__field textarea {
+.modal__field .modal__comment {
   transition: border-color 250ms var(--cubic);
 }
 
@@ -597,22 +559,50 @@ img {
   margin-bottom: 0;
 }
 
-.modal__field:hover textarea,
-.modal__field:focus textarea {
+.modal__field:hover .modal__comment,
+.modal__field:focus .modal__comment {
   border-color: var(--accent-color);
 }
 
-.comment {
+.modal__icon {
+  position: absolute;
+  top: 58%;
+  left: 15px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  fill: var(--titel-text-color);
+  transition: fill 250ms var(--cubic), fill 250ms var(--cubic);
+}
+
+.modal__icon:hover {
+  fill: var(--accent-color);
+}
+
+.modal__input:hover + .modal__icon,
+.modal__input:focus + .modal__icon {
+  fill: var(--accent-color);
+}
+
+.modal__comment {
   resize: none;
   padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
   cursor: pointer;
 }
 
-.modal__field textarea::placeholder {
+.modal__field .modal__comment::placeholder {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+
+.modal__checkbox-icon {
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
 }
 
 .modal__checkbox-input {
@@ -621,7 +611,14 @@ img {
 }
 
 .modal__checkbox-input:focus + .modal__checkbox-icon {
-  background-image: url(../images/icon\check.svg);
+  background-image: url(../images/check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  fill: var(--accent-color);
+}
+
+.modal__checkbox-input:checked + .modal__checkbox-icon {
+  background-image: url(../images/check.svg);
   background-size: contain;
   background-origin: border-box;
   fill: var(--accent-color);
@@ -636,13 +633,17 @@ img {
   margin-bottom: 30px;
 }
 
+.modal__agreement {
+  margin-bottom: 0;
+}
+
 .modal__link {
   margin-left: 5px;
   color: var(--accent-color);
 }
 
 .modal__input,
-.comment {
+.modal__comment {
   outline: none;
 }
 
@@ -723,7 +724,7 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.disc-text + .disc-item {
+.disc-text {
   position: absolute;
   top: 90%;
   left: 20%;
@@ -845,6 +846,118 @@ img {
   cursor: pointer;
 }
 
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--accent-color);
+}
+
+.filters {
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.filter-item {
+  margin-right: 8px;
+}
+
+.filter-item:nth-child(5n) {
+  margin-right: 0px;
+}
+
+.main-lists {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+  border: #000000;
+}
+
+.project-list {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.project-link {
+  display: block;
+  transition: box-shadow 250ms var(--cubic);
+}
+
+.project-link:hover, .project-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-link:hover .product-overlay,
+.project-link:focus .product-overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.project-link:hover .product-action,
+.project-link:focus .product-action {
+  opacity: 1;
+}
+
+.portfolio-image {
+  margin: 0px;
+}
+
+.project-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(23, 138, 232, 0.9);
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 250ms var(--cubic), opacity 250ms var(--cubic);
+}
+
+.product-action {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 63px 24px;
+  top: 0;
+  left: 0;
+  font-Size: 18px;
+  Line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+  opacity: 0;
+}
+
+.container-projects {
+  font-weight: 370px;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
+
+.portfolio-title {
+  margin: 0;
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
 .footer-container {
   display: flex;
   align-items: baseline;
@@ -855,7 +968,6 @@ footer {
   padding-bottom: 60px;
 }
 
-/* третий блок футера */
 .addres {
   margin-right: 70px;
 }
