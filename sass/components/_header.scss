@@ -86,13 +86,6 @@
     margin-left: 50px;
 }
 
-/* .nav-icon {
-  fill: #757575;
-  margin-right: 10px;
-
-transition: fill 250ms var(--cubic);
-} */
-
 .nav-link {
     display: block;
     padding-top: 32px;
@@ -133,8 +126,3 @@ transition: fill 250ms var(--cubic);
 .nav-contacts:focus {
     color: #2196f3;
 }
-
-/* .nav-contacts:hover .nav-icon,
-.nav-contacts:focus .nav-icon {
-  fill: var(--accent-color);
-} */

@@ -21,6 +21,15 @@
   overflow: hidden;
 }
 
+.heading-title {
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
 h1,
 h2,
 h3,
@@ -435,12 +444,6 @@ img {
   margin-left: 50px;
 }
 
-/* .nav-icon {
-  fill: #757575;
-  margin-right: 10px;
-
-transition: fill 250ms var(--cubic);
-} */
 .nav-link {
   display: block;
   padding-top: 32px;
@@ -476,10 +479,6 @@ transition: fill 250ms var(--cubic);
   color: #2196f3;
 }
 
-/* .nav-contacts:hover .nav-icon,
-.nav-contacts:focus .nav-icon {
-  fill: var(--accent-color);
-} */
 .filters {
   margin-bottom: 50px;
   display: flex;
@@ -496,5 +495,184 @@ transition: fill 250ms var(--cubic);
 .main-lists {
   margin-top: 94px;
   margin-bottom: 94px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+  border: #000000;
+}
+
+.project-list {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.project-link {
+  display: block;
+  transition: box-shadow 250ms var(--cubic);
+}
+
+.project-link:hover,
+.project-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-image {
+  margin: 0px;
+}
+
+.project-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(23, 138, 232, 0.9);
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 250ms var(--cubic), opacity 250ms var(--cubic);
+}
+
+.product-action {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 63px 24px;
+  top: 0;
+  left: 0;
+  font-Size: 18px;
+  Line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+  opacity: 0;
+}
+
+.project-link:hover .product-overlay,
+.project-link:focus .product-overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.project-link:hover .product-action,
+.project-link:focus .product-action {
+  opacity: 1;
+}
+
+.container-projects {
+  font-weight: 370px;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
+
+.portfolio-title {
+  margin: 0;
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.addres {
+  margin-right: 70px;
+}
+
+.footer-address {
+  margin-top: 20px;
+  font-style: normal;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.footer-link {
+  display: block;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms var(--cubic);
+}
+
+.footer-maps {
+  display: block;
+  color: var(--primary-white-color);
+  transition: color 250ms var(--cubic);
+}
+
+.footer-maps:hover,
+.footer-maps:focus {
+  color: var(--accent-color);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
+}
+
+.social {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-top: 0;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social-item {
+  margin-right: 10px;
+}
+
+.social-item:last-child {
+  margin-right: 0;
+}
+
+.subscribe {
+  margin-left: auto;
+}
+
+.subscribe-titel {
+  display: inline-block;
+  margin-bottom: 20px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.subscribe-input {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
 }
 /*# sourceMappingURL=portfolio.css.map */

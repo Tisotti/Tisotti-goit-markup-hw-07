@@ -1,0 +1,40 @@
+.addres {
+    margin-right: 70px;
+}
+
+.footer-address {
+    margin-top: 20px;
+    font-style: normal;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.footer-link {
+    display: block;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: color 250ms var(--cubic);
+}
+
+.footer-maps {
+    display: block;
+    color: var(--primary-white-color);
+
+    transition: color 250ms var(--cubic);
+}
+
+.footer-maps:hover,
+.footer-maps:focus {
+    color: var(--accent-color);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    color: var(--accent-color);
+}
