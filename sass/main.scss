@@ -1,11 +1,13 @@
 // variables - переменние root
 @import "./variables/variables";
 
-// скрить заголовки
-@import "./utils/visually-hidden";
-
 // base style - стили от боди
+@import "./base/normalize";
 @import "./base/base";
+
+// скрить заголовки
+@import "./utils/mixin-border";
+@import "./utils/visually-hidden";
 
 // components
 @import "./components/btn";

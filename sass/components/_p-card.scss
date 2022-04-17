@@ -1,3 +1,5 @@
+@import "../utils/flex-placeholder";
+
 .projects {
     display: flex;
     flex-wrap: wrap;
@@ -24,15 +26,15 @@
     }
 
     &:hover .product-overlay,
-    &:focus .product-overlay {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    
-    &:hover .product-action,
-    &:focus .product-action {
-        opacity: 1;
-    }
+&:focus .product-overlay {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+&:hover .product-action,
+&:focus .product-action {
+    opacity: 1;
+}
 }
 
 .portfolio-image {
@@ -64,9 +66,7 @@
 .product-action {
     position: absolute;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex;
 
     padding: 63px 24px;
 
