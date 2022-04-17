@@ -203,6 +203,10 @@
         background-origin: border-box;
         fill: var(--accent-color);
     }
+
+    &:focus+.modal__checkbox-icon {
+        fill: var(--accent-color);
+    }
 }
 
 .checkbox__lable {

@@ -879,6 +879,10 @@ img {
   fill: var(--accent-color);
 }
 
+.modal__checkbox-input:focus + .modal__checkbox-icon {
+  fill: var(--accent-color);
+}
+
 .checkbox__lable {
   display: flex;
   align-items: center;
