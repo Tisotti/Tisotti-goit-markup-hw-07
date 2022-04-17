@@ -1,0 +1,183 @@
+// навигация
+
+.nav-icon {
+    fill: #757575;
+    margin-right: 10px;
+
+    transition: fill 250ms var(--cubic);
+}
+
+.nav-contacts:hover .nav-icon,
+.nav-contacts:focus .nav-icon {
+    fill: var(--accent-color);
+}
+
+// модалка кнопка закрить крестик
+.modal__icon__btn-close {
+    width: 11px;
+    height: 11px;
+
+    fill: #000000;
+
+    transition: fill 250ms var(--cubic);
+}
+
+// модалка в инпуте: чеовек, кониерт, телефон
+
+.modal__icon {
+    position: absolute;
+    top: 58%;
+    left: 15px;
+
+    display: inline-block;
+
+    width: 18px;
+    height: 18px;
+
+    fill: var(--titel-text-color);
+    transition: fill 250ms var(--cubic), fill 250ms var(--cubic);
+}
+
+.modal__icon:hover {
+    fill: var(--accent-color);
+}
+
+.modal__input:hover+.modal__icon,
+.modal__input:focus+.modal__icon {
+    fill: var(--accent-color);
+}
+
+// модалка галочка в чекбоксе
+
+.modal__checkbox-icon {
+    margin-right: 7px;
+
+    width: 16px;
+    height: 15px;
+}
+
+.modal__checkbox-input:focus+.modal__checkbox-icon {
+    background-image: url(..../images/icon\check.svg);
+    background-size: contain;
+    background-origin: border-box;
+    fill: var(--accent-color);
+}
+
+// особенности
+.pecu-icon {
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//  наша команда логотіпи соц сетей
+.team-icons {
+    list-style-type: none;
+    display: flex;
+    padding-left: 0;
+    justify-content: center;
+}
+
+.team-icon:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team-link-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+
+    background-color: var(--primary-white-color);
+    border-radius: 50%;
+
+    transition: background-color 250ms var(--cubic);
+}
+
+.svg-icon {
+    transition: fill 250ms var(--cubic);
+}
+
+.team-link-icon:hover,
+.team-link-icon:focus {
+    background-color: var(--accent-color);
+}
+
+.team-link-icon:hover .svg-icon,
+.team-link-icon:focus .svg-icon {
+    fill: var(--primary-white-color);
+}
+
+.team-link-icon {
+    fill: #afb1b8;
+}
+
+// постоянний клиенти иконки
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+    fill: var(--accent-color);
+}
+
+.clients-icon {
+    width: 106px;
+    height: 60px;
+    fill: #afb1b8;
+
+    transition: fill 250ms var(--cubic);
+}
+
+// футер соц сети
+.footer-link-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transition: background-color 250ms var(--cubic);
+}
+
+.footer-link-icon:hover,
+.footer-link-icon:focus {
+    background-color: var(--accent-color);
+}
+
+.footer-icon {
+    fill: var(--primary-white-color);
+    width: 20px;
+    height: 20px;
+}
+
+// футер подписаться
+.subscribe-icon {
+    position: absolute;
+
+    top: 15px;
+    right: 28px;
+
+}
+
+
+
+
+
+
+
+
+
+
+

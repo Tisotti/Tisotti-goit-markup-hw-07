@@ -1,0 +1,25 @@
+// variables - переменние root
+@import "./variables/variables";
+
+// скрить заголовки
+@import "./utils/visually-hidden";
+
+// base style - стили от боди
+@import "./base/base";
+
+// components
+@import "./components/btn";
+@import "./components/container";
+@import "./components/icons";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/modal";
+@import "./components/peculiarities";
+@import "./components/discription";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/footer";
+
+
+
+
