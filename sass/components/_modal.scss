@@ -79,6 +79,15 @@
     &:focus input {
         border-color: var(--accent-color);
     }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+    
+    &:hover .modal__comment,
+    &:focus .modal__comment {
+        border-color: var(--accent-color);
+    }
 }
 
 .modal__field label {
@@ -108,8 +117,12 @@
 .modal__input {
     cursor: pointer;
 
-    &:focus,
-    .modal__comment:focus {
+    &:hover+.modal__icon,
+    &:focus+.modal__icon {
+        fill: var(--accent-color);
+    }
+
+    &:focus {
         border-color: var(--accent-color);
         fill: var(--accent-color);
     }
@@ -117,15 +130,6 @@
 
 .modal__field .modal__comment {
     transition: border-color 250ms var(--cubic);
-}
-
-.modal__field:last-child {
-    margin-bottom: 0;
-}
-
-.modal__field:hover .modal__comment,
-.modal__field:focus .modal__comment {
-    border-color: var(--accent-color);
 }
 
 // модалка в инпуте: чеовек, кониерт, телефон
@@ -148,11 +152,6 @@
     }
 }
 
-.modal__input:hover+.modal__icon,
-.modal__input:focus+.modal__icon {
-    fill: var(--accent-color);
-}
-
 // комментарии
 .modal__comment {
     resize: none;
@@ -161,6 +160,13 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     cursor: pointer;
+
+
+    &:focus {
+      border-color: var(--accent-color);
+      fill: var(--accent-color);
+    }
+    
 }
 
 .modal__field .modal__comment::placeholder {
@@ -182,21 +188,21 @@
 
 .modal__checkbox-input {
     position: absolute;
-    appearance: none
-}
+    appearance: none;
 
-.modal__checkbox-input:focus+.modal__checkbox-icon {
-    background-image: url(../images/check.svg);
-    background-size: contain;
-    background-origin: border-box;
-    fill: var(--accent-color);
-}
+    &:checked+.modal__checkbox-icon {
+        background-image: url(../images/check.svg);
+        background-size: contain;
+        background-origin: border-box;
+        fill: var(--accent-color);
+    }
 
-.modal__checkbox-input:checked+.modal__checkbox-icon {
-    background-image: url(../images/check.svg);
-    background-size: contain;
-    background-origin: border-box;
-    fill: var(--accent-color);
+    &:focus+.modal__checkbox-icon {
+        background-image: url(../images/check.svg);
+        background-size: contain;
+        background-origin: border-box;
+        fill: var(--accent-color);
+    }
 }
 
 .checkbox__lable {
