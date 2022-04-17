@@ -20,8 +20,9 @@
 
 .social-item {
     margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
-.social-item:last-child {
-    margin-right: 0;
-}

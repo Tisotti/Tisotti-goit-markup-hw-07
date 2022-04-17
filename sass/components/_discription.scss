@@ -15,11 +15,13 @@
 
 .disc-item {
     margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
-&:last-child {
-    margin-right: 0;
-}
+
 
 .disc-picture {
     display: inline-block;
@@ -28,23 +30,25 @@
 .disc-wrap {
     position: relative;
     z-index: -1;
+
+    &::before {
+        content: "";
+        position: absolute;
+        display: inline-block;
+    
+        left: 0%;
+        bottom: 0;
+    
+        width: 100%;
+        height: 70px;
+    
+        background-color: rgba(47, 48, 58, 0.8);
+    }
 }
 
-&::before {
-    content: "";
-    position: absolute;
-    display: inline-block;
 
-    left: 0%;
-    bottom: 0;
 
-    width: 100%;
-    height: 70px;
-
-    background-color: rgba(47, 48, 58, 0.8);
-}
-
-.disc-text {
+.disc-text + .disc-item {
     position: absolute;
     top: 90%;
     left: 20%;

@@ -64,12 +64,14 @@
     flex-direction: column;
 
     margin-bottom: 10px;
+
+    &:hover input,
+    &:focus input {
+        border-color: var(--accent-color);
+    }
 }
 
-.modal__field:hover input,
-.modal__field:focus input {
-    border-color: var(--accent-color);
-}
+
 
 .modal__field label {
     margin-bottom: 4px;
@@ -97,12 +99,12 @@
 
 .modal__input {
     cursor: pointer;
-}
 
-.modal__input:focus,
-textarea:focus {
-    border-color: var(--accent-color);
-    fill: var(--accent-color);
+    &:focus,
+    textarea:focus {
+        border-color: var(--accent-color);
+        fill: var(--accent-color);
+    }
 }
 
 .modal__field textarea {

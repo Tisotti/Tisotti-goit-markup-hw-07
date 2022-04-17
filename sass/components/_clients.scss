@@ -32,11 +32,17 @@
     cursor: pointer;
 
     transition: border-color 250ms var(--cubic);
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+    }
 }
 
-.clients-item:last-child {
-    margin-right: 0;
-}
 
 .clients-link {
     display: flex;
@@ -51,8 +57,5 @@
     cursor: pointer;
 }
 
-.clients-item:hover,
-.clients-item:focus {
-    border-color: var(--accent-color);
-}
+
 

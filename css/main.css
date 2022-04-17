@@ -112,8 +112,7 @@ img {
   transition: background-color 250ms var(--cubic);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero-btn:hover, .hero-btn:focus {
   background-color: #188ce8;
 }
 
@@ -153,8 +152,7 @@ img {
   transition: background-color 250ms var(--cubic);
 }
 
-.modal__btn__submit:hover,
-.modal__btn__submit:focus {
+.modal__btn__submit:hover, .modal__btn__submit:focus {
   background-color: #188ce8;
 }
 
@@ -176,8 +174,7 @@ img {
   transition: background-color 250ms var(--cubic), color 250ms var(--cubic), box-shadow 250ms var(--cubic);
 }
 
-.filter-btn:hover,
-.filter-btn:focus {
+.filter-btn:hover, .filter-btn:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   cursor: pointer;
@@ -202,8 +199,7 @@ img {
   transition: background-color 250ms var(--cubic);
 }
 
-.subscribe-btn:hover,
-.subscribe-btn:focus {
+.subscribe-btn:hover, .subscribe-btn:focus {
   background-color: #188ce8;
 }
 
@@ -303,12 +299,7 @@ img {
   transition: background-color 250ms var(--cubic);
 }
 
-.svg-icon {
-  transition: fill 250ms var(--cubic);
-}
-
-.team-link-icon:hover,
-.team-link-icon:focus {
+.team-link-icon:hover, .team-link-icon:focus {
   background-color: var(--accent-color);
 }
 
@@ -319,6 +310,10 @@ img {
 
 .team-link-icon {
   fill: #afb1b8;
+}
+
+.svg-icon {
+  transition: fill 250ms var(--cubic);
 }
 
 .clients-link:hover .clients-icon,
@@ -346,8 +341,7 @@ img {
   transition: background-color 250ms var(--cubic);
 }
 
-.footer-link-icon:hover,
-.footer-link-icon:focus {
+.footer-link-icon:hover, .footer-link-icon:focus {
   background-color: var(--accent-color);
 }
 
@@ -393,7 +387,6 @@ img {
   color: var(--primary-white-color);
 }
 
-/* подсветка активной страницы ??? */
 .nav-link.current {
   color: var(--accent-color);
   position: relative;
@@ -451,8 +444,7 @@ img {
   transition: color 250ms var(--cubic);
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.nav-link:hover, .nav-link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -474,8 +466,7 @@ img {
   transition: color 250ms var(--cubic);
 }
 
-.nav-contacts:hover,
-.nav-contacts:focus {
+.nav-contacts:hover, .nav-contacts:focus {
   color: #2196f3;
 }
 
@@ -593,7 +584,7 @@ img {
 }
 
 .modal__input:focus,
-textarea:focus {
+.modal__input textarea:focus {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -732,7 +723,7 @@ textarea:focus {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.disc-text {
+.disc-text + .disc-item {
   position: absolute;
   top: 90%;
   left: 20%;
@@ -839,6 +830,10 @@ textarea:focus {
   margin-right: 0;
 }
 
+.clients-item:hover, .clients-item:focus {
+  border-color: var(--accent-color);
+}
+
 .clients-link {
   display: flex;
   justify-content: center;
@@ -848,11 +843,6 @@ textarea:focus {
   height: 100%;
   color: currentColor;
   cursor: pointer;
-}
-
-.clients-item:hover,
-.clients-item:focus {
-  border-color: var(--accent-color);
 }
 
 .footer-container {
@@ -889,19 +879,17 @@ footer {
   transition: color 250ms var(--cubic);
 }
 
+.footer-link:hover, .footer-link:focus {
+  color: var(--accent-color);
+}
+
 .footer-maps {
   display: block;
   color: var(--primary-white-color);
   transition: color 250ms var(--cubic);
 }
 
-.footer-maps:hover,
-.footer-maps:focus {
-  color: var(--accent-color);
-}
-
-.footer-link:hover,
-.footer-link:focus {
+.footer-maps:hover, .footer-maps:focus {
   color: var(--accent-color);
 }
 

@@ -20,12 +20,15 @@
     text-align: center;
 
     transition: background-color 250ms var(--cubic);
+
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+    }
+
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
-    background-color: #188ce8;
-}
+     
 
 // модалка - закрить
 
@@ -44,12 +47,13 @@
     background-color: var(--primary-white-color);
 
     cursor: pointer;
+
+    &:hover .modal__icon__btn-close,
+    &:focus .modal__icon__btn-close {
+        fill: var(--accent-color);
+    }
 }
 
-.modal__btn__close:hover .modal__icon__btn-close,
-.modal__btn__close:focus .modal__icon__btn-close {
-    fill: var(--accent-color);
-}
 
 // модалка - отправить форму
 
@@ -75,12 +79,15 @@
     text-align: center;
 
     transition: background-color 250ms var(--cubic);
+
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+    }
+
 }
 
-.modal__btn__submit:hover,
-.modal__btn__submit:focus {
-    background-color: #188ce8;
-}
+
 
 // портфолио - кнопки фильтра
 
@@ -104,15 +111,17 @@
     transition: background-color 250ms var(--cubic),
         color 250ms var(--cubic),
         box-shadow 250ms var(--cubic);
+
+        &:hover,
+        &:focus {
+            color: var(--primary-white-color);
+            background-color: var(--accent-color);
+            cursor: pointer;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
 }
 
-.filter-btn:hover,
-.filter-btn:focus {
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
-    cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+
 
 // кнопка подписаться в футере 
 .subscribe-btn {
@@ -137,12 +146,15 @@
     min-width: 200px;
 
     transition: background-color 250ms var(--cubic);
+
+
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+    }
 }
 
-.subscribe-btn:hover,
-.subscribe-btn:focus {
-    background-color: #188ce8;
-}
+
 
 .subscribe-btn-span {
     display: flex;

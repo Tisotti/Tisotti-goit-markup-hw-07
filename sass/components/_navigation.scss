@@ -13,10 +13,10 @@
 
 .site-nav .item {
     margin-right: 50px;
-}
 
-.site-nav .item:last-child {
-    margin-right: 0;
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .nav-address {
@@ -40,13 +40,15 @@
     padding-bottom: 32px;
 
     transition: color 250ms var(--cubic);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        fill: var(--accent-color);
+    }
 }
 
-.nav-link:hover,
-.nav-link:focus {
-    color: var(--accent-color);
-    fill: var(--accent-color);
-}
+
 
 .nav-link,
 .logo {
@@ -68,9 +70,10 @@
     text-decoration: none;
 
     transition: color 250ms var(--cubic);
+
+    &:hover,
+    &:focus {
+        color: #2196f3;
+    }
 }
 
-.nav-contacts:hover,
-.nav-contacts:focus {
-    color: #2196f3;
-}
